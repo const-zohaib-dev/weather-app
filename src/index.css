@@ -5,49 +5,58 @@
 /* DM Sans */
 
 @font-face {
-    font-family: "DM Sans";
-    src: url(./assets/fonts/DM_Sans/DMSans-Light.ttf) format("truetype");
-    font-weight: 300;
-    font-style: normal;
+  font-family: "DM Sans";
+  src: url(./assets/fonts/DM_Sans/DMSans-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "DM Sans";
-    src: url(./assets/fonts/DM_Sans/DMSans-Medium.ttf) format("truetype");
-    font-weight: 500;
-    font-style: normal;
+  font-family: "DM Sans";
+  src: url(./assets/fonts/DM_Sans/DMSans-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "DM Sans";
-    src: url(./assets/fonts/DM_Sans/DMSans-SemiBold.ttf) format("truetype");
-    font-weight: 600;
-    font-style: normal;
+  font-family: "DM Sans";
+  src: url(./assets/fonts/DM_Sans/DMSans-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "DM Sans";
-    src: url(./assets/fonts/DM_Sans/DMSans-SemiBoldItalic.ttf) format("truetype");
-    font-weight: 600;
-    font-style: italic;
+  font-family: "DM Sans";
+  src: url(./assets/fonts/DM_Sans/DMSans-SemiBoldItalic.ttf) format("truetype");
+  font-weight: 600;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: "DM Sans";
-    src: url(./assets/fonts/DM_Sans/DMSans-Bold.ttf) format("truetype");
-    font-weight: 700;
-    font-style: normal;
+  font-family: "DM Sans";
+  src: url(./assets/fonts/DM_Sans/DMSans-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* Bricolage Grotesque */
 
 @font-face {
-    font-family: "Bricolage Grotesque";
-    src: url(./assets/fonts/Bricolage_Grotesque/BricolageGrotesque-Bold.ttf) format("truetype");
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Bricolage Grotesque";
+  src: url(./assets/fonts/Bricolage_Grotesque/BricolageGrotesque-Bold.ttf)
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 body {
-    @apply bg-neutral900
+  @apply bg-neutral900 text-neutral font-sans;
+}
+
+.dropdown-btn {
+  @apply p-2 hover:bg-neutral700 rounded-md w-full flex items-center justify-between;
+}
+
+.tag {
+  @apply pl-2 text-sm text-neutral300 mb-[6px];
 }
