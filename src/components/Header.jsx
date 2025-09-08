@@ -33,7 +33,7 @@ export default function Header() {
     setIsOpen(prev => !prev)
   }, [setIsOpen])
   return (
-    <header className="flex items-center justify-between h-24 px-10 font-light">
+    <header className="flex items-center justify-between h-20 px-10 font-light">
       <img className="w-44" src={logo} alt="logo" />
       <div className="relative">
         <button
