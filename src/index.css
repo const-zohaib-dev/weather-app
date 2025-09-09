@@ -60,3 +60,20 @@ body {
 .tag {
   @apply pl-2 text-sm text-neutral300 mb-[6px];
 }
+
+.hourly:last-child {
+  @apply mb-0;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  @apply w-[6px]
+}
+.scrollbar-custom::-webkit-scrollbar-track {
+  @apply bg-neutral800
+}
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  @apply rounded-lg bg-neutral600
+}
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue500
+}

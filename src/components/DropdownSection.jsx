@@ -1,6 +1,11 @@
 import DropdownBtn from "./DropdownBtn";
 
-export default function DropdownSection({ index, tag, btnsText, setDropdownData }) {
+export default function DropdownSection({
+  index,
+  tag,
+  btnsText,
+  setDropdownData,
+}) {
   return (
     <div
       className={`pt-2 ${
@@ -9,7 +14,13 @@ export default function DropdownSection({ index, tag, btnsText, setDropdownData 
     >
       <p className="tag">{tag}</p>
       {btnsText.map((obj, index) => (
-        <DropdownBtn key={index} text={obj.text} isActive={obj.isActive} tag={tag} setDropdownData={setDropdownData} />
+        <DropdownBtn
+          key={index}
+          text={obj.text}
+          isActive={obj.isActive}
+          tag={tag}
+          setDropdownData={setDropdownData}
+        />
       ))}
     </div>
   );
